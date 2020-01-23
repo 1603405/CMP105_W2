@@ -6,7 +6,6 @@ Level::Level(sf::RenderWindow* hwnd, Input* in)
 	input = in;
 
 	// initialise game objects
-
 }
 
 Level::~Level()
@@ -17,6 +16,18 @@ Level::~Level()
 // handle user input
 void Level::handleInput()
 {
+	if (input->isKeyDown(sf::Keyboard::W)) 
+	{
+		if (input->isKeyDown(sf::Keyboard::A))
+		{
+			if (input->isKeyDown(sf::Keyboard::D))
+			{
+				std::cout << " d is down\n";
+			}
+		}
+	} 
+
+
 
 
 }
@@ -24,14 +35,12 @@ void Level::handleInput()
 // Update game objects
 void Level::update()
 {
-
 }
 
 // Render level
 void Level::render()
 {
 	beginDraw();
-
 	endDraw();
 }
 
