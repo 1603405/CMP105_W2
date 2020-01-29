@@ -5,7 +5,6 @@
 #include <string.h>
 #include <iostream>
 
-
 class Level{
 public:
 	Level(sf::RenderWindow* hwnd, Input* in);

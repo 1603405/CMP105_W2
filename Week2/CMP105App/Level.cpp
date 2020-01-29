@@ -1,4 +1,8 @@
 #include "Level.h"
+#include <SFML/Graphics.hpp>
+#include "Framework/Input.h"
+#include <string.h>
+#include <iostream>
 
 Level::Level(sf::RenderWindow* hwnd, Input* in)
 {
@@ -22,13 +26,17 @@ void Level::handleInput()
 		{
 			if (input->isKeyDown(sf::Keyboard::D))
 			{
+
 				std::cout << " d is down\n";
 			}
 		}
 	} 
 
-
-
+	if (input->isKeyDown(sf::Keyboard::Escape))
+	{
+		window->close();
+	}
+	
 
 }
 
