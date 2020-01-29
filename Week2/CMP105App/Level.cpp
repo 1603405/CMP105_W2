@@ -37,6 +37,8 @@ void Level::handleInput()
 		window->close();
 	}
 	
+	std::cout << input->getMouseX();
+
 
 }
 
