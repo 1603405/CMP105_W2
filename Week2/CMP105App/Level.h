@@ -19,10 +19,14 @@ private:
 	void beginDraw();
 	void endDraw();
 
+
 	// Default variables for level class.
 	sf::RenderWindow* window;
 	Input* input;
 
 	// Add your object here
+	sf::Text corrdinateX; // text out for X
+	sf::Text corrdinateY; // text out for Y
+
 
 };

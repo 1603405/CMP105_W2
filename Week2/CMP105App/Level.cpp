@@ -37,7 +37,7 @@ void Level::handleInput()
 		window->close();
 	}
 	
-	std::cout << input->getMouseX();
+	//std::cout << input->getMouseX();
 
 
 }
@@ -51,6 +51,9 @@ void Level::update()
 void Level::render()
 {
 	beginDraw();
+	window->draw(corrdinateX);
+	window->draw(corrdinateY);
+
 	endDraw();
 }
 
